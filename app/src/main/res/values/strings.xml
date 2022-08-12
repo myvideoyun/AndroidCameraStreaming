@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">livestream</string>
+    <string name="btn_livestream">直播推流</string>
+    <string name="btn_camera">录制</string>
+    <string name="btn_stop_recorder">结束录制</string>
+    <string name="btn_start_recorder">开始录制</string>
+    <string name="btn_switch_camera">切换相机</string>
+    <string name="btn_stop_push">结束推流</string>
+    <string name="btn_start_push">开始推流</string>
+</resources>
