@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/wenyao-think-mac/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "rtmp-jni-Release-arm64-v8a": {
+      "artifactName": "rtmp-jni",
+      "buildCommand": "/Users/wenyao-think-mac/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/arm64-v8a --target rtmp-jni",
+      "abi": "arm64-v8a",
+      "output": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/build/intermediates/cmake/release/obj/arm64-v8a/librtmp-jni.so"
+    }
+  }
+}

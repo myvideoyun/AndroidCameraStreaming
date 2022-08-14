@@ -1,0 +1,83 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/Users/wenyao-think-mac/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86 --target clean"
+	],
+	"libraries" : 
+	{
+		"rtmp-jni-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "rtmp-jni",
+			"buildCommand" : "/Users/wenyao-think-mac/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86 --target rtmp-jni",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_jni_EXPORTS -I../../../../src/main/cpp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/rtmpmuxer.c",
+					"workingDirectory" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_jni_EXPORTS -I../../../../src/main/cpp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/librtmp-jni.c",
+					"workingDirectory" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_jni_EXPORTS -I../../../../src/main/cpp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/librtmp/amf.c",
+					"workingDirectory" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_jni_EXPORTS -I../../../../src/main/cpp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/librtmp/hashswf.c",
+					"workingDirectory" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_jni_EXPORTS -I../../../../src/main/cpp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/librtmp/log.c",
+					"workingDirectory" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_jni_EXPORTS -I../../../../src/main/cpp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/librtmp/parseurl.c",
+					"workingDirectory" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_jni_EXPORTS -I../../../../src/main/cpp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/librtmp/rtmp.c",
+					"workingDirectory" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_jni_EXPORTS -I../../../../src/main/cpp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/flvmuxer/xiecc_rtmp.c",
+					"workingDirectory" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86"
+				}
+			],
+			"output" : "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/build/intermediates/cmake/release/obj/x86/librtmp-jni.so",
+			"toolchain" : "7172567809434090307"
+		}
+	},
+	"toolchains" : 
+	{
+		"7172567809434090307" : 
+		{
+			"cCompilerExecutable" : "/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

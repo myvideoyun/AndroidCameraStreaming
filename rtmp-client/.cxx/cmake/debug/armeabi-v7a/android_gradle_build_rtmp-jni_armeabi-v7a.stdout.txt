@@ -1,0 +1,72 @@
+[1/9] Building C object CMakeFiles/rtmp-jni.dir/src/main/cpp/rtmpmuxer.c.o
+[2/9] Building C object CMakeFiles/rtmp-jni.dir/src/main/cpp/librtmp-jni.c.o
+[3/9] Building C object CMakeFiles/rtmp-jni.dir/src/main/cpp/librtmp/amf.c.o
+[4/9] Building C object CMakeFiles/rtmp-jni.dir/src/main/cpp/librtmp/log.c.o
+[5/9] Building C object CMakeFiles/rtmp-jni.dir/src/main/cpp/librtmp/hashswf.c.o
+[6/9] Building C object CMakeFiles/rtmp-jni.dir/src/main/cpp/librtmp/rtmp.c.o
+[7/9] Building C object CMakeFiles/rtmp-jni.dir/src/main/cpp/librtmp/parseurl.c.o
+[8/9] Building C object CMakeFiles/rtmp-jni.dir/src/main/cpp/flvmuxer/xiecc_rtmp.c.o
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/rtmpmuxer.c:27:49: warning: passing 'jbyte *' (aka 'signed char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    jint result = rtmp_sender_write_audio_frame(&data[offset], length, timestamp, 0);
+                                                ^~~~~~~~~~~~~
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/flvmuxer/xiecc_rtmp.h:30:44: note: passing argument to parameter 'data' here
+int rtmp_sender_write_audio_frame(uint8_t *data,
+                                           ^
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/rtmpmuxer.c:38:49: warning: passing 'jbyte *' (aka 'signed char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    jint result = rtmp_sender_write_video_frame(&data[offset], length, timestamp, 0, 0);
+                                                ^~~~~~~~~~~~~
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/flvmuxer/xiecc_rtmp.h:41:44: note: passing argument to parameter 'data' here
+int rtmp_sender_write_video_frame(uint8_t *data,
+                                           ^
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/rtmpmuxer.c:64:36: warning: passing 'char *' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    int readCount = rtmp_read_date(data, size);
+                                   ^~~~
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/flvmuxer/xiecc_rtmp.h:47:29: note: passing argument to parameter 'data' here
+int rtmp_read_date(uint8_t* data, int size);
+                            ^
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/rtmpmuxer.c:67:67: warning: passing 'char *' to parameter of type 'const jbyte *' (aka 'const signed char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        (*env)->SetByteArrayRegion(env, data_, offset, readCount, data);  // copy
+                                                                  ^~~~
+4 warnings generated.
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/librtmp-jni.c:43:42: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    RTMPResult ret = RTMP_SetupURL(rtmp, url);
+                                         ^~~
+../../../../src/main/cpp/librtmp/rtmp.h:329:43: note: passing argument to parameter 'url' here
+  RTMPResult RTMP_SetupURL(RTMP *r, char *url);
+                                          ^
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/librtmp-jni.c:93:67: warning: passing 'char *' to parameter of type 'const jbyte *' (aka 'const signed char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        (*env)->SetByteArrayRegion(env, data_, offset, readCount, data);  // copy
+                                                                  ^~~~
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/librtmp-jni.c:121:35: warning: passing 'jbyte *' (aka 'signed char *') to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    int result = RTMP_Write(rtmp, buf, size);
+                                  ^~~
+../../../../src/main/cpp/librtmp/rtmp.h:415:39: note: passing argument to parameter 'buf' here
+  int RTMP_Write(RTMP *r, const char *buf, int size);
+                                      ^
+3 warnings generated.
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/flvmuxer/xiecc_rtmp.c:154:42: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    RTMPResult ret = RTMP_SetupURL(rtmp, url);
+                                         ^~~
+../../../../src/main/cpp/librtmp/rtmp.h:329:43: note: passing argument to parameter 'url' here
+  RTMPResult RTMP_SetupURL(RTMP *r, char *url);
+                                          ^
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/flvmuxer/xiecc_rtmp.c:212:9: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned int)' [-Wimplicit-function-declaration]
+        memcpy(send_buffer + offset, buffer, body_len);
+        ^
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/flvmuxer/xiecc_rtmp.c:212:9: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/flvmuxer/xiecc_rtmp.c:225:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/flvmuxer/xiecc_rtmp.c:239:25: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        RTMP_Read(rtmp, data, size);
+                        ^~~~
+../../../../src/main/cpp/librtmp/rtmp.h:409:32: note: passing argument to parameter 'buf' here
+  int RTMP_Read(RTMP *r, char *buf, int size);
+                               ^
+4 warnings generated.
+In file included from /Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/src/main/cpp/librtmp/amf.c:33:
+../../../../src/main/cpp/librtmp/bytes.h:74:2: warning: "Float word order not defined, assuming the same as byte order!" [-W#warnings]
+#warning "Float word order not defined, assuming the same as byte order!"
+ ^
+1 warning generated.
+[9/9] Linking C shared library ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/librtmp-jni.so

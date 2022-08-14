@@ -1,0 +1,3 @@
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86_64/CMakeFiles/edit_cache.dir
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86_64/CMakeFiles/rtmp-jni.dir

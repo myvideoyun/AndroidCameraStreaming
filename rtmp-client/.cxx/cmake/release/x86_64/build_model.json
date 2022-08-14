@@ -1,0 +1,74 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming",
+      "sdkFolder": "/Users/wenyao-think-mac/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/build/intermediates",
+      "gradleModulePathName": ":rtmp-client",
+      "moduleRootFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client",
+      "makeFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/.cxx",
+      "cxxFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx",
+      "ndkFolder": "/Users/wenyao-think-mac/Library/Android/sdk/ndk-bundle",
+      "ndkVersion": "21.3.6528147",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [
+      "-DANDROID_PLATFORM\u003dandroid-15"
+    ],
+    "cFlagList": [],
+    "cppFlagsList": [
+      "-frtti -fexceptions"
+    ],
+    "variantName": "release",
+    "soFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/build/intermediates/cmake/release/lib",
+    "objFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/build/intermediates/cmake/release/obj",
+    "jsonFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release",
+    "gradleBuildOutputFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cxx/release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86_64",
+  "jsonFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86_64/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cxx/release/x86_64",
+  "objFolder": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/build/intermediates/cmake/release/obj/x86_64",
+  "buildCommandFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86_64/build_command.txt",
+  "buildOutputFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86_64/build_output.txt",
+  "modelOutputFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86_64/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cxx/release/x86_64/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cxx/release/x86_64/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cxx/release/x86_64/build_generation_state.json",
+    "cacheKeyFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cxx/release/x86_64/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cxx/release/x86_64/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cxx/release/x86_64/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cxx/release/x86_64/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86_64/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/wenyao-think-mac/my_work/myvideoyun.products/AndroidCameraStreaming/rtmp-client/.cxx/cmake/release/x86_64/compile_commands.json"
+}
