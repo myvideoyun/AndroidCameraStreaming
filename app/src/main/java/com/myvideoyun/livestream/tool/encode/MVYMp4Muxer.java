@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-public class MVYMp4Muxer implements MVYMp4MuxerInterface {
+public class MVYMp4Muxer {
 
     private MediaMuxer muxer;
     private ReadWriteLock lock = new ReentrantReadWriteLock(false);

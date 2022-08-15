@@ -24,7 +24,6 @@ import android.widget.ToggleButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
-import com.myvideoyun.livestream.plug.EffectHandler;
 import com.myvideoyun.livestream.tool.camera.MVYCameraPreviewListener;
 import com.myvideoyun.livestream.tool.camera.MVYCameraPreviewWrap;
 import com.myvideoyun.livestream.tool.camera.MVYPreviewView;
@@ -66,9 +65,6 @@ public class CameraActivity extends AppCompatActivity implements MVYCameraPrevie
     // 视频保存路径
     String videoPath;
 
-    // 特效
-    EffectHandler effectHandler;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,15 +94,11 @@ public class CameraActivity extends AppCompatActivity implements MVYCameraPrevie
     @Override
     public void createGLEnvironment() {
         openHardware();
-
-        surfaceView.eglContext.syncRunOnRenderThread(this::createEffectHandler);
     }
 
     @Override
     public void destroyGLEnvironment() {
         closeHardware();
-
-        surfaceView.eglContext.syncRunOnRenderThread(this::destroyEffectHandler);
     }
 
     /**
@@ -216,21 +208,6 @@ public class CameraActivity extends AppCompatActivity implements MVYCameraPrevie
         closeMediaCodec();
     }
 
-    private void createEffectHandler() {
-        effectHandler = new EffectHandler(this);
-    }
-
-    private void processTexture(int texture, int width, int height) {
-        effectHandler.processTexture(texture, width, height);
-    }
-
-    private void destroyEffectHandler() {
-        if (effectHandler != null) {
-            effectHandler.destroy();
-            effectHandler = null;
-        }
-    }
-
     /**
      * 相机数据回调
      * ⚠️ 注意: 函数运行在视频处理线程
@@ -238,8 +215,6 @@ public class CameraActivity extends AppCompatActivity implements MVYCameraPrevie
      */
     @Override
     public void cameraVideoOutput(int texture, int width, int height, long timestamp) {
-        processTexture(texture, width, height);
-
         // 渲染到surfaceView
         surfaceView.render(texture, width, height);
 

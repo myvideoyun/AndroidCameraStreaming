@@ -7,4 +7,5 @@
     <string name="btn_switch_camera">切换相机</string>
     <string name="btn_stop_push">结束推流</string>
     <string name="btn_start_push">开始推流</string>
+    <string name="hint_rtmp">请输入推流地址</string>
 </resources>

@@ -30,7 +30,6 @@ import android.os.Build;
 import android.os.SystemClock;
 import android.util.Log;
 
-import com.myvideoyun.livestream.plug.RtmpPush;
 import com.myvideoyun.livestream.tool.gpu.MVYGLProgram;
 import com.myvideoyun.livestream.tool.gpu.MVYGPUImageConstants;
 import com.myvideoyun.livestream.tool.gpu.MVYGPUImageEGLContext;
@@ -79,7 +78,7 @@ public class MVYMediaCodecEncoder {
     private static final int TIMEOUT = 1000;
 
     // 音视频合成器
-    private MVYMp4MuxerInterface mp4Muxer;
+    private MVYMp4Muxer mp4Muxer;
 
     // 视频编码完成时用到的锁
     volatile private Boolean isRecordFinish = false;
@@ -94,11 +93,8 @@ public class MVYMediaCodecEncoder {
 
     public MVYMediaCodecEncoder(String path) {
         // 创建音视频合成器
-        if (path.startsWith("rtmp")) {
-            mp4Muxer = new RtmpPush();
-        } else {
-            mp4Muxer = new MVYMp4Muxer();
-        }
+        mp4Muxer = new MVYMp4Muxer();
+
         try {
             mp4Muxer.setPath(path);
         } catch (IOException e) {
