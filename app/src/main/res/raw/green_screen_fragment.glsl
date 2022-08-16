@@ -1,8 +1,10 @@
 precision mediump float;
 
 uniform sampler2D uSampler;
+uniform sampler2D uObject;
 
 varying vec2 vTextureCoord;
+varying vec2 vTextureObjectCoord;
 
 void main() {
    // lookup the color of the texel corresponding to the fragment being
@@ -27,5 +29,7 @@ void main() {
    // tend to form halos at color boundaries.
    tempColor.a = tempColor.a * tempColor.a * tempColor.a;
 
-   gl_FragColor = tempColor;
+   vec4 objectPixel = texture2D(uObject, vTextureObjectCoord);
+
+   gl_FragColor = mix(objectPixel, tempColor, tempColor.a);
 }

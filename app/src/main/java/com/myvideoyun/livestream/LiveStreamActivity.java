@@ -1,5 +1,6 @@
 package com.myvideoyun.livestream;
 
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.SurfaceHolder;
 import android.view.View;
@@ -12,8 +13,9 @@ import android.widget.ToggleButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.myvideoyun.livestream.tool.GreenScreenRender;
-import com.pedro.encoder.input.video.CameraHelper;
+import com.pedro.encoder.input.gl.render.filters.object.ImageObjectFilterRender;
 import com.pedro.encoder.input.video.CameraOpenException;
+import com.pedro.encoder.utils.gl.TranslateTo;
 import com.pedro.rtmp.utils.ConnectCheckerRtmp;
 import com.pedro.rtplibrary.rtmp.RtmpCamera1;
 import com.pedro.rtplibrary.view.OpenGlView;
@@ -73,7 +75,17 @@ public class LiveStreamActivity extends AppCompatActivity implements ConnectChec
         openGlView.getHolder().addCallback(this);
 
         // 设置绿幕Filter
-        rtmpCamera1.getGlInterface().addFilter(new GreenScreenRender());
+        GreenScreenRender greenScreenRender = new GreenScreenRender();
+        rtmpCamera1.getGlInterface().addFilter(greenScreenRender);
+        greenScreenRender.setImage(BitmapFactory.decodeResource(getResources(), R.mipmap.girl));
+
+        // 设置前景
+        ImageObjectFilterRender imageObjectFilterRender = new ImageObjectFilterRender();
+        rtmpCamera1.getGlInterface().addFilter(imageObjectFilterRender);
+        imageObjectFilterRender.setImage(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
+        imageObjectFilterRender.setDefaultScale(600, 800);
+
+        imageObjectFilterRender.setPosition(TranslateTo.TOP_RIGHT);
     }
 
     @Override
